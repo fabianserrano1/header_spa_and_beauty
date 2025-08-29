@@ -32,6 +32,7 @@ CONTENEDOR GLOBAL
 HEADER (según tu HTML)
 ============================ */
 header {
+  width: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -52,6 +53,7 @@ header {
   align-items: center; 
   gap: 0.25rem;
   padding-left: 2rem;
+  margin-right: 9.75rem;
 }
 .logo-glow { 
   color: $color-darkblue; 
@@ -67,7 +69,7 @@ header {
 .nav-main ul { 
   display: flex; 
   gap: clamp(1.5rem, 4vw, 3.5rem); 
-  list-style: none; 
+  list-style: none;   
 }
 .nav-main ul li a {
   text-decoration: none; 
@@ -77,6 +79,7 @@ header {
   color: $color-darkblue; 
   position: relative; 
   padding-bottom: 0.25rem;
+  
 }
 .nav-main ul li a::after {
   content: ''; 
@@ -95,7 +98,8 @@ header {
 /* Nav secundaria (iconos + botones) */
 .nav-icons { 
   justify-self: end;
-  margin-right: 4.375rem; 
+  margin-right: 4.375rem;
+  margin-left: 19.6875rem; 
 }
 .nav-icons ul { 
   display: flex; 
@@ -122,10 +126,11 @@ button.in {
   display: inline-flex; 
   align-items: center; 
   justify-content: center;
-  padding: 0.25rem 0.5rem; 
+  padding: 0.5rem 1rem; 
   line-height: 1;
   margin-right: 2.5rem;
   margin-left: 4.125rem;
+  white-space: nowrap;
 }
 button.up {
   font-family: $fuente-principal; 
@@ -381,6 +386,6 @@ button.up:hover {
 }
 button.in:hover {
   text-decoration: none;
-  color: $color-cyan;
+  color: $color-white;
 }
 
